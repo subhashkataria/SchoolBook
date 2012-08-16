@@ -1,0 +1,14 @@
+#main {
+			width: 100%;
+			position: relative;
+			left: 10%;
+			color: 
+		}
+		
+#inner{
+			width:100%; 
+			background-color: #348781; 
+			height:60px;
+			overflow: hidden;
+			position: relative;
+		}
