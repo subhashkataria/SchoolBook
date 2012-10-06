@@ -1,6 +1,0 @@
-<?php
-	include("called_function.php");
-	$uid = 92;
-	$str = selectUserName($uid);
-	echo ":( ".$str;
-?>
