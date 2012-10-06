@@ -1,0 +1,13 @@
+#header
+{
+	background-color: blue;
+	height: 100px;
+	z-index: -1;
+}
+#left-sidebar
+{
+	position:absolute;
+	width: 200px;
+	border-right: 2px solid black;
+	height:1000px;
+}

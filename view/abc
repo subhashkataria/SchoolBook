@@ -1,0 +1,184 @@
+	<!--	<div id="inner2">
+			
+		
+			<div id="form1">
+				<form name="form1">
+					<table align="right">
+						<tr>
+							<td>Find People </td>
+							<td> <input type="text" name="txtfindpeople"> <input type="submit" style="background: url(../images/search.jpg) no-repeat;" value=""> </td>
+						</tr>
+					</table>			
+				</form>
+			</div>
+			<br /><br /><br />
+
+			<div id="image_menu">
+				<img src="../images/male-symbol.jpg" height="80" width="80"> <br /><br />
+				<?php
+					echo "<font color='#A49FA4'> <b>".$user_type."</b> </font>";
+				?>
+				 <br /><br />
+				<a href="#" style="text-decoration: none; color: black;"> Link to Events </a> <br />
+				<a href="#" style="text-decoration: none; color: black;"> Link to Literature </a>
+				<br /><br /><br />
+				<h4> Profile Complete <br /> _% </h4>
+			</div>			
+			
+			<div style="position: relative; right: 1%; float: right;">
+			
+			</div>
+			
+			<br /><br /><br />
+
+			<div id="info">
+				<?php
+					//echo "<font color='#0B6DCF'><h4>".ucfirst($_SESSION['user_fname'])." ".ucfirst($_SESSION['user_lname'])."</h4></font>";
+				 
+				 	echo "<font color='#0B6DCF' size='4'>".ucfirst($user['fname'][0])." ".ucfirst($user['lname'][0])."</font>";
+					echo "<br />";
+					echo $user['email'][0];
+				
+				?>	
+					
+				##	<br /><br />
+					
+					<form action="updateProfileInfoController.php" method="POST">
+					
+						<h3 align="left"> <font color="#A49FA4"> Educational Information </font> </h3> <br />
+						<table width="70%">
+							<tr>
+								<td> Degree: </td>
+								<?php
+									echo "<td> <input type='text' name='txtdegree' value='".$degree."'> </td>";
+								?>
+							</tr>
+					
+							<tr>
+								<td> Field: </td>
+								<?php
+									echo "<td> <input type='text' name='txtedufield' value='".$field_e."'> </td>";
+								?>
+							</tr>
+
+							<tr>
+								<td> Specialisation: </td>
+								<?php
+									echo "<td> <input type='text' name='txteduspl' value='".$special_e."'> </td>";
+								?>
+							</tr>
+
+							<tr>
+								<td> Batch: </td>
+								<?php
+									echo "<td> <input type='text' name='txtbatch' value='".$education['edu_batch'][0]."'> </td>";
+								?>
+							</tr>
+
+							<!-- Institute --> 
+							<!--<tr>
+								<td> Institute: </td>
+								<?php
+									echo "<td> <input type='text' name='txtinstitute' value='".."'> </td>";
+								?>
+							</tr>-->
+
+							<tr>
+								<td> Skills: </td>
+								<?php
+									echo "<td> <textarea name='txteduskills' rows='5' cols='20' >".."</textarea> </td>";
+								?>
+							</tr>
+
+							<tr>
+								<td> Your personal Interest: </td>
+								<?php
+									echo "<td> <textarea name='txteduinterest' rows='5' cols='20'>".."</textarea> </td>";
+								?>
+							</tr>
+						</table>
+						##
+					<br /><br /><br />
+					<hr width="25%" align="center"/>
+					<br /><br />
+
+					<h3 align="left"> <font color="#A49FA4"> Professional Information </font> </h3>
+					<br />
+					<table width="70%">
+										
+						<tr>
+							<td> Your Field: </td>
+							<?php							
+								echo "<td> <input type='text' name='txtproffield' value='".$field_e."'> </td>";
+							?>
+						</tr>
+						<tr>
+							<td> You are specialised in: </td>
+							<?php
+								echo "<td> <input type='text' name='txtprofspl' value='".$special_f."'> </td>";
+							?>
+						</tr>
+						<tr>						
+							<td> Your interest: </td>
+							<?php
+								echo "<td> <input type='text' name='txtprofinterest' value='".$professional["prof_interest"][0]."'> </td>";
+							?>
+						</tr>
+						<tr>
+							<td> Experience: </td>
+							<?php
+								echo "<td> <input type='text' name='txtexp' value='".$professional["prof_exp"][0]."'> </td>";
+							?>
+						</tr>
+						<tr>
+							<td> Profession: </td>
+							<td>
+								<select name="selprofession" onchange="enableTxt();" id="selprof">
+									<option value="-1">--Select Profession--</option>
+									<option value="other">Other</option>
+								</select>
+							</td>
+							<td> <label>Enter profession:</label> </td>
+							<?php
+								echo "<td> <input type='text' disabled name='txtprofession' value='".$profession."' id='txtprof'> </td>";
+							?>
+						</tr>
+						
+					<!--	<tr>
+							<td colspan="2" align="center"> <input type="submit" value="Save"> </td>						
+						</tr>	--->
+					</table>
+					
+					<!--<table width="65%" id="table1">
+						<tr>
+							<td> Organisations Worked in: </td>
+							<td> <input type="text" name="txtorg0"> </td>
+						</tr>
+					</table> --->
+					<table width="60%">
+						<!--<tr>
+							<td align="right"><a href="javascript:;" onclick="addrow();" class="add-author" style="text-decoration: none; color: grey;"> <font color="#68656D"> +Add More </font> </a>​ </td>
+						</tr>--->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<!--<td align="center"> <a href="javascript:;" onclick="enableText();" style="text-decoration: none;" class="button" id="save_edit">Save</a> </td>--->
+							<td align="center"> <input type="submit" value="  Save  "> </td>
+							
+						</tr>
+					</table>
+					<?php
+						echo "<input type='text' name='txtedu' value='".$flag_e."'>";
+						echo "<input type='text' name='txtprof' value='".$flag_f."'>";
+					?>
+										
+					
+					
+					</form>
+			</div>
+			
+		</div>-->

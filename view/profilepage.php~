@@ -35,7 +35,7 @@
 				<a href="#" style="text-decoration: none; color: black;"> Link to Literature </a>
 			</div>			
 			
-			<div style="position: relative; right: 1%; float: right; border: groove;">
+			<div style="position: relative; right: 1%; float: right;">
 				<form name="form2">
 					<a href="#" style="text-decoration: none;" class="button"> Connect </a> &nbsp;&nbsp;&nbsp;
 					<a href="#" style="text-decoration: none;" class="button"> Recommend </a> &nbsp;&nbsp;&nbsp;
@@ -43,7 +43,7 @@
 				</form>
 			</div>
 			
-			<br /><br /><br /><br />
+			<br /><br /><br />
 
 			<div id="info">
 					Username <br />

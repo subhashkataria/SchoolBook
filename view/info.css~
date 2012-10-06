@@ -1,7 +1,6 @@
 #info {
 			width: 80%;
 			position: relative;
-			left: 20%;
-			height: 600px;
-			border: groove;
+			left: 10%;
+			overflow: auto;
 		}

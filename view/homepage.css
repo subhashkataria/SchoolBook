@@ -1,0 +1,9 @@
+#main1{position: relative; width: 100%; overflow: auto;}
+
+#main{position: relative; left: 5%; width: 90%; overflow: auto;}
+
+#box {margin-left: 20px; margin-right: 40px; padding: 3px; width: 250px; border-style: groove; float: left; position: relative;
+	border-color: gray;
+}
+
+h1 { text-indent: 20px; font-family: Tahoma, Geneva, sans-serif}

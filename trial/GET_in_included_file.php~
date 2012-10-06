@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<?php
+			include("getData.php");
+		?>
+	</head>
+	<body>
+		<?php
+			echo $vatiable;
+		?> 
+	</body>
+</html>

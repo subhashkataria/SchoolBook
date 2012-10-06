@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+ <html> 
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GroupsHome</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/coolblue.css" />
+	<link rel="stylesheet" type="text/css" href="css/list.css">
+
+    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.6.1.min.js"><\/script>')</script>
+
+    <script src="js/scrollToTop.js"></script>
+
+</head>
+
+<body id="top">
+
+<!--header -->
+<div id="header-wrap"><header>
+
+ 	<hgroup>
+        <h1><a href="index.html">SchoolBook</a></h1>
+        <h3>Connecting People...</h3>
+    </hgroup>
+			
+		
+		<nav>
+		<ul>
+			<li><a href="home.html">Home</a><span></span></li>
+			<li><a href="profile.html">Profile</a><span></span></li>
+			<li><a href="inbox.html">Inbox</a><span></span></li>
+			<li><a href="#">Edit Profile</a><span></span></li>
+			<li id="current"><a href="#">Groups</a><span></span></li>
+			<li><a href="#">Logout</a><span></span></li>
+		</ul>
+	</nav>	
+	<form id="quick-search" method="get" action="#">
+      <fieldset class="search">
+         <label for="qsearch">Search:</label>
+         <input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." title="Start typing and hit ENTER" />
+         <button class="btn" title="Submit Search">Search</button>
+		 
+      </fieldset>
+   </form>
+</div>
+		
+
+<!--/header-->
+</header>
+<div id="content-wrap">
+
+		<br />
+		
+		<div id="inner2" style="border: groove; overflow: auto;">
+			
+			<div style="width: 60%; position :relative; float: left; border: groove;"> <font size="4"> <b> Groups </b> </font> </div>
+			<div style="width: 36%; position :relative; float: left; left: 3%; border: groove;"> <font size="4"> <b> Ctegories </b> </font> </div>
+			
+			<br />
+
+			<div style="width: 60%; position :relative; float: left; height: 100%; border: groove;">
+				<!-- php code goes here for accessing group names from the database -->
+				<table>
+					
+				</table>
+			</div>
+			
+			<div style="width: 36%; position :relative; float: left; left: 3%; height: 100%; border: groove; overflow: auto;">
+				<!-- php code goes here for accessing group names from the database -->
+				<!-- following is test data -->
+				<ul class="sidenav">
+					<li>
+						<a href="">Science
+							<span>
+								Physics 
+							 	Chemistry 
+							 	Biology 
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">Commerce
+							<span>
+								<a href="#"> Accounts </a>
+								<a href="#"> Business </a>
+								<a href="#"> Economics </a>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">Computer
+							<span>Blandit turpis patria euismod at iaceo appellatio, demoveo esse. Tation utrum utrum abigo demoveo immitto aliquam sino aliquip. </span>
+						</a>
+					</li>
+					<li>
+						<a href="">Defence
+							<span>Blandit turpis patria euismod at iaceo appellatio, demoveo esse. Tation utrum utrum abigo demoveo immitto aliquam sino aliquip. </span>
+						</a>
+					</li>
+					<li>
+						<a href="">Architecture
+							<span>Blandit turpis patria euismod at iaceo appellatio, demoveo esse. Tation utrum utrum abigo demoveo immitto aliquam sino aliquip. </span>
+						</a>
+					</li>
+					<li>
+						<a href="">Fine Arts
+							<span>Blandit turpis patria euismod at iaceo appellatio, demoveo esse. Tation utrum utrum abigo demoveo immitto aliquam sino aliquip. </span>
+						</a>
+					</li>
+					<li>
+						<a href="">Law
+							<span>Blandit turpis patria euismod at iaceo appellatio, demoveo esse. Tation utrum utrum abigo demoveo immitto aliquam sino aliquip. </span>
+						</a>
+					</li>
+			</ul>
+
+			</div>			
+			
+		</div>
+		
+</div>
+	
+		
+<div id="extra-wrap">
+	<div id="extra" class="clearfix">
+
+	    <div id="gallery" class="clearfix"></div>
+
+	    <div class="col first"></div>
+	</div>
+</div>
+
+<!-- /footer -->
+</footer>
+
+</body>
+</html>
